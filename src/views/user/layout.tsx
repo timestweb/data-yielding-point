@@ -23,7 +23,7 @@ const menuItems = [
     section: "OVERVIEW",
     items: [
       { label: "Dashboard", color: "bg-blue-500", href: "/dashboard" },
-      { label: "Deposits", color: "bg-green-500", href: "user/deposit" },
+      { label: "Deposits", color: "bg-green-500", href: "/user/deposit" },
       { label: "Withdrawals", color: "bg-yellow-500", href: "/withdrawals" },
       { label: "Redeem Data", color: "bg-purple-500", href: "/redeem-data" },
     ],
@@ -44,7 +44,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       {/* Top Navbar */}
       <nav className="bg-white border-b border-gray-100 h-20 p-3 flex justify-between px-8">
         <div className="flex gap-32">
-          <Image width={140} height={140} src={logo} alt="Logo" />
+          <Image width={100} height={80} src={logo} alt="Logo" />
           <Input placeholder="Search" className="w-[30rem] bg-gray-100" />
         </div>
         <section>
